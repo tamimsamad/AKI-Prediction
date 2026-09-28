@@ -10,6 +10,7 @@ from sklearn.metrics import (
     roc_auc_score,
     average_precision_score,
     precision_recall_curve,
+    ConfusionMatrixDisplay,
 )
 
 
@@ -170,3 +171,12 @@ print("RANDOM FOREST FEATURE IMPORTANCE")
 print("=" * 60)
 
 print(importance.to_string())
+ConfusionMatrixDisplay.from_predictions(
+    y_test,
+    rf_pred,
+)
+
+plt.title("Random Forest Confusion Matrix")
+plt.tight_layout()
+plt.savefig("models/random_forest_confusion_matrix.png", dpi=300)
+plt.show()
