@@ -95,8 +95,7 @@ pip install -r requirements.txt
 python src/train_model.py
 ```
 
-The script trains Logistic Regression and Random Forest models, prints evaluation metrics, and generates the precision-recall curve.
-
+The script trains Logistic Regression and Random Forest models, prints evaluation metrics, and generates the precision-recall curve and Random Forest confusion matrix.
 
 ## Project Structure
 
@@ -104,7 +103,8 @@ The script trains Logistic Regression and Random Forest models, prints evaluatio
 AKI-Prediction/
 ├── data/
 ├── models/
-│   └── precision_recall_curve.png
+│   ├── precision_recall_curve.png
+│   └── random_forest_confusion_matrix.png
 ├── src/
 │   └── train_model.py
 ├── .gitignore
