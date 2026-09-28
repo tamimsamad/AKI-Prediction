@@ -74,6 +74,30 @@ Feature importance describes how the model used the variables for prediction. It
 * The results should not be used for clinical diagnosis or treatment decisions.
 * Feature importance does not establish causal relationships.
 
+## How to Run
+
+1. Download the dataset from the Dryad source listed above.
+2. Extract the dataset files into:
+
+```text
+data/AKI_Dataset/
+```
+
+3. Install the required Python packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Run the training script:
+
+```bash
+python src/train_model.py
+```
+
+The script trains Logistic Regression and Random Forest models, prints evaluation metrics, and generates the precision-recall curve.
+
+
 ## Project Structure
 
 ```text
